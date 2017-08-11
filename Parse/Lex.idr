@@ -1,3 +1,30 @@
+---------------------------------------------------------------
+||| Copyright 2017 by Xuanrui Qi <me@xuanruiqi.com> 
+|||  Licensed under Mozilla Public License. 
+||| Available at
+||| 
+|||    https://www.mozilla.org/en-US/MPL/2.0/ 
+|||
+||| Covered Software is provided under this License 
+||| on an “as is” basis, without warranty of any kind, 
+||| either expressed, implied, or statutory, including, 
+||| without limitation, warranties that the Covered Software 
+||| is free of defects, merchantable, fit for a particular 
+||| purpose or non-infringing. No liability is assumed unless 
+||| required by law or consented by writing. Refer to 
+||| license for details.
+|||
+|||
+|||
+||| Based on work by Edwin Brady
+||| Copyright (c) 2017 Edwin Brady
+|||    School of Computer Science, University of St Andrews
+||| All rights reserved.
+
+||| This code is derived from software written by Edwin Brady
+||| (ecb10@st-andrews.ac.uk).
+---------------------------------------------------------------
+
 module Parse.Lex
 
 import public Text.Lexer
