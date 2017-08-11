@@ -1,0 +1,13 @@
+package lamt
+
+pkgs = contrib
+
+modules = Core.Expr,
+          Core.Eval,
+          Parse.Lex,
+          Parse.Parse,
+          Parse.Grammar
+
+executable = t
+
+main = Main
