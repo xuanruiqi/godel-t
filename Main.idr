@@ -2,12 +2,13 @@ module Main
 
 import Core.Eval
 import Core.Expr
+import Core.Context
 import Parse.Parse
 import Parse.Grammar
 
 printEval : Expr -> String
 printEval e = if isVal e
-              then case hasType e of
+              then case hasType e emptyCtxt of
                         Just ty => case toVal e of
                                         Just v => "Result: " ++ show v ++ 
                                                   " |- " ++ show ty
@@ -37,7 +38,3 @@ main = do putStr "> "
           input <- getLine
           interpret input
           main
-
--- Local Variables:
--- idris-load-packages: ("contrib")
--- End:

@@ -53,9 +53,3 @@ parseStr str rule
                 Left (Error err []) => Right $ ParseFail err Nothing []
                 Left (Error err (t::ts)) => Right $ ParseFail err (Just (line t, col t)) (map tok (t::ts))
                 Right (val, _) => Left val
-
-         
--- Local Variables:
--- idris-load-packages: ("contrib")
--- End:
- 

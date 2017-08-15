@@ -87,7 +87,3 @@ lex str
     notIgnore token = case tok token of
                             Ignore _ => False
                             _ => True
-    
--- Local Variables:
--- idris-load-packages: ("contrib")
--- End:

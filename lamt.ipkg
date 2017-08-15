@@ -4,6 +4,8 @@ pkgs = contrib
 
 modules = Core.Expr,
           Core.Eval,
+          Core.Context,
+          Proof.Proof,
           Parse.Lex,
           Parse.Parse,
           Parse.Grammar

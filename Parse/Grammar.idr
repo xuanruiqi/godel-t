@@ -68,7 +68,7 @@ mutual
 mutual
   export
   expr : Rule Expr
-  expr = do e1 <- simpleExpr; commit; e2 <- simpleExpr
+  expr = do e1 <- simpleExpr; commit; e2 <- expr
             pure (App e1 e2)    
      <|> simpleExpr
 
@@ -104,9 +104,3 @@ mutual
                   e <- expr
                   commit
                   pure (Lambda tau x e)
-         
-
--- Local Variables:
--- idris-load-packages: ("contrib")
--- End:
- 
